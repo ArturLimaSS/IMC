@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,94 +11,111 @@
 
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="container" class="Container">
-        <div class="cabeçalho">
-            <h1>
-                TEOJI <br /> A SOFTWARE COMPANY
-            </h1>
-        </div>
-        <div>
-            <label id="labelAltura">Digite sua altura</label>
-            <br>
-            <input type="text" id="altura" name="altura" placeholder="Ex: Para 1,90m, 190" /><br />
-            <br>
-            <label id="labelPeso">Digite seu peso</label>
-            <br>
-            <input name="peso_input" id="peso_input" class="form-control" type="text" placeholder="Ex: Para 88kg, 88" /><br />
-            <br>
-            <button class="submit" title="submit" onclick="calculate()">Calcular</button>
+      <div class="cabeçalho">
+        <h1>
+          TEOJI <br />
+          A SOFTWARE COMPANY
+        </h1>
+      </div>
+      <div>
+        <label id="labelAltura">Digite sua altura</label>
+        <br />
+        <input
+          type="text"
+          id="altura"
+          name="altura"
+          placeholder="Ex: Para 1,90m, 190"
+        /><br />
+        <br />
+        <label id="labelPeso">Digite seu peso</label>
+        <br />
+        <input
+          name="peso_input"
+          id="peso_input"
+          class="form-control"
+          type="text"
+          placeholder="Ex: Para 88kg, 88"
+        /><br />
+        <br />
+        <button class="submit" title="submit" onclick="calculate()">
+          Calcular
+        </button>
+      </div>
+      <br />
+      <br />
+      <div class="resultado">
+        <table align="center">
+          <tr>
+            <th class="tituloCol">RESULTADO</th>
+          </tr>
+          <tr>
+            <th class="dado" id="dado">
+                <h1></h1>
+            </th>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <br />
 
-        </div>
-        <br>
-        <br>
-        <div class="resultado">
-            <table align="center">
-                <tr>
-                    <th>
-                        RESULTADO
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        value
-                    </th>
-                </tr>
-            </table>
-        </div>
         <div>
-            <br />
-
-            <div>
-                <table align="center" class="tabela" name="tabela" id="tabela">
-                    <h2>TABELA IMC</h2>
-                    <tr class="tituloCol">
-                        <th>IMC</th>
-                        <th>CLASSIFICAÇÃO</th>
-                        <th>OBESIDADE(GRAU)</th>
-                    </tr>
-                    <tr>
-                        <th>MENOR QUE 18,5</th>
-                        <th>0</th>
-                        <th>MAGREZA</th>
-                    </tr>
-                    <tr>
-                        <th>ENTRE 18,5 E 24,9</th>
-                        <th>NORMAL</th>
-                        <th>0</th>
-                    </tr>
-                    <tr>
-                        <th>ENTRE 25,0 E 29,9</th>
-                        <th>SOBREPESO</th>
-                        <th>I</th>
-                    </tr>
-                    <tr>
-                        <th>ENTRE 30,0 E 39,9</th>
-                        <th>OBESIDADE</th>
-                        <th>II</th>
-                    </tr>
-                    <tr>
-                        <th>MAIOR QUE 40,0</th>
-                        <th>OBESIDADE GRAVE</th>
-                        <th>III</th>
-                    </tr>
-                    <div class="paragrafo">
-                        <p>
-                            IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.
-                        </p>
-                        <p>
-                            O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
-                        </p>
-                        <p>
-                            Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.
-                        </p>
-                    </div>
-                </table>
+          <table align="center" class="tabela" name="tabela" id="tabela">
+            <h2>TABELA IMC</h2>
+            <tr class="tituloCol">
+              <th>IMC</th>
+              <th>CLASSIFICAÇÃO</th>
+              <th>OBESIDADE(GRAU)</th>
+            </tr>
+            <tr class="magreza">
+              <th>MENOR QUE 18,5</th>
+              <th>0</th>
+              <th>MAGREZA</th>
+            </tr>
+            <tr class="normal">
+              <th>ENTRE 18,5 E 24,9</th>
+              <th>NORMAL</th>
+              <th>0</th>
+            </tr>
+            <tr class="sobrepeso">
+              <th>ENTRE 25,0 E 29,9</th>
+              <th>SOBREPESO</th>
+              <th>I</th>
+            </tr>
+            <tr class="obesidade">
+              <th>ENTRE 30,0 E 39,9</th>
+              <th>OBESIDADE</th>
+              <th>II</th>
+            </tr>
+            <tr class="obesidadeGrave">
+              <th>MAIOR QUE 40,0</th>
+              <th>OBESIDADE GRAVE</th>
+              <th>III</th>
+            </tr>
+            <div class="paragrafo">
+              <p>
+                IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado
+                pela Organização Mundial de Saúde para calcular o peso ideal de
+                cada pessoa.
+              </p>
+              <p>
+                O índice é calculado da seguinte maneira: divide-se o peso do
+                paciente pela sua altura elevada ao quadrado. Diz-se que o
+                indivíduo tem peso normal quando o resultado do IMC está entre
+                18,5 e 24,9.
+              </p>
+              <p>
+                Quer descobrir seu IMC? Insira seu peso e sua altura nos campos
+                abaixo e compare com os índices da tabela. Importante: siga os
+                exemplos e use pontos como separadores.
+              </p>
             </div>
+          </table>
         </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
