@@ -1,80 +1,106 @@
 body {
-  background-color: rgb(236, 236, 236);
-  text-align: center;
-  font-size: large;
-  padding: 8px;
-  box-shadow: 0 0 200px rgb(58, 0, 58);
-
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+    font-size: large;
+    padding: 8px;
+    box-shadow: 0 0 200px rgb(58, 0, 58);
 }
 
 .cabeçalho {
-  background-color: purple;
+    background-color: purple;
 }
 
 img {
-  height: 50%;
-  width: 20%;
-  object-fit: contain;
+    height: 50%;
+    width: 20%;
+    object-fit: contain;
 }
 
 label {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
 }
 
 input {
-  border: solid grey 2px;
-  border-radius: 5px;
-  min-height: 30px;
-  min-width: 250px;
-  font-size: large;
-  text-align: center;
-  box-shadow: 0 0 0.1em #8904B1;
-}
-input:hover{
-  border: solid 2px #8904B1;
-  box-shadow: 0 0 0.5em #8904B1;
-}
-input:focus{
-  border: solid 1px #8904B1;
-}
-table{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  background-color: white;
-  max-width: 1000px;
-  box-shadow: 0 0 1em rgb(172, 172, 172);
+    border: solid grey 2px;
+    border-radius: 5px;
+    min-height: 30px;
+    min-width: 250px;
+    font-size: large;
+    text-align: center;
+    box-shadow: 0 0 0.1em #8904B1;
 }
 
-tr, th{
-  border: 1px solid #dddddd;
-  text-align: center;
-  padding: 8px;
+input:hover {
+    border: solid 2px #8904B1;
+    box-shadow: 0 0 0.5em #8904B1;
 }
 
-.tituloCol{
-  background-color: purple;
+input:focus {
+    border: solid 1px #8904B1;
 }
 
-tr:hover{
-  background-color: #8904B1;
+table {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    max-width: 1000px;
+    box-shadow: 0 0 1em rgb(172, 172, 172);
 }
 
-.submit{
-  border-radius: 5px;
-  min-height: 50px;
-  min-width: 250px;
-  border: solid 1px;
-  background-color: purple;
-  box-shadow: 0 0 0.1em #8904B1;
+tr,
+th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
 }
 
-.submit:hover{
-  border: solid 1px green;
-  background-color: rgb(172, 0, 172);
+.tituloCol {
+    background-color: purple;
 }
 
-.submit:active{
-  background-color: #8904B1;
+tr:hover {
+    background-color: #8904B1;
+}
+
+.submit {
+    border-radius: 5px;
+    min-height: 50px;
+    min-width: 250px;
+    border: solid 1px;
+    background-color: purple;
+    box-shadow: 0 0 0.1em #8904B1;
+}
+
+.submit:hover {
+    border: solid 1px green;
+    background-color: rgb(172, 0, 172);
+}
+
+.submit:active {
+    background-color: #8904B1;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    25% {
+        transform: translatey(-20px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    75% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+.resultado {
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
 }
