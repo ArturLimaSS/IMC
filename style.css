@@ -34,7 +34,7 @@ input:focus {
     border: solid 1px #8904B1;
 }
 
-table {
+.tabelaConteudo {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -43,15 +43,16 @@ table {
     box-shadow: 0 0 1em rgb(172, 172, 172);
 }
 
+.dado {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 0 1em rgb(172, 172, 172);
+}
+
 tr,
 th {
     border: 1px solid #dddddd;
     text-align: center;
     padding: 8px;
-}
-
-.tituloCol {
-    background-color: purple;
 }
 
 tr:hover {
@@ -80,19 +81,19 @@ tr:hover {
     0% {
         transform: translatey(-10px);
     }
-    50%{
+    50% {
         transform: translate(+10px);
     }
     100% {
         transform: translatey(-10px);
     }
-
 }
+
 .resultado {
     transform: translatey(1px);
     animation: float 2s ease-in-out infinite;
 }
 
-.tituloCol{
-    background-color: #8904B1;
+.tituloCol {
+    background-color: purple;
 }
