@@ -9,6 +9,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
     <script src="https://momentjs.com/downloads/moment.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
@@ -17,12 +19,12 @@
 <body>
     <div id="container" class="Container">
         <div class="cabeçalho">
-            <h1>
-                TEOJI <br /> A SOFTWARE COMPANY
+            <h1 class="tituloCabeçalho">
+                CALCULADORA IMC
             </h1>
         </div>
         <div>
-            <label id="labelAltura">Digite sua altura</label>
+            <label id="labelAltura" class="labelAltura">Digite sua altura</label>
             <br />
             <input type="text" id="altura" name="altura" placeholder="Ex: Para 1,90m, 190" /><br />
             <br />
@@ -39,18 +41,17 @@
         <div class="resultado" align="center">
             <table class="resultTable" align=" center ">
                 <tr>
-                    <th class="dado " id="dado" name="dado" style="display: none;">
-                        <h1></h1>
+                    <th class="dado " id="dado" name="dado" style="display: block;">
+                        Digite os valores acima!
                     </th>
                 </tr>
             </table>
         </div>
         <div>
             <br />
-
             <div>
                 <table align="center" class="tabelaConteudo" name="tabelaConteudo" id="tabela ">
-                    <h2>TABELA IMC</h2>
+                    <h2 class="titleTabela" name="titleTabela" id="titleTabela">TABELA IMC</h2>
                     <tr class="tituloCol ">
                         <th>IMC</th>
                         <th>CLASSIFICAÇÃO</th>
@@ -82,6 +83,7 @@
                         <th>III</th>
                     </tr>
                     <div class="paragrafo ">
+                        <h2>O que é IMC?</h2>
                         <p>
                             IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.
                         </p>
@@ -89,9 +91,18 @@
                             O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
                         </p>
                         <p>
-                            Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.
+                            Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use não pontos como separadores.
                         </p>
                     </div>
+                    <div class="social" name="social" id="social">
+                        <a href="https://github.com/ArturLimaSS?tab=repositories" class="fa fa-github"></a>
+                        <a href="https://www.linkedin.com/in/arturlimass/" class="fa fa-linkedin"></a>
+                        <a href="https://wa.me/5531999066164" class="fa fa-whatsapp"></a>
+                    </div>
+                    <div class="copyright " name="copyright " id="copyright">
+                        Copyright© Artur Lima
+                    </div>
+
                 </table>
             </div>
         </div>

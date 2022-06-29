@@ -3,18 +3,25 @@ function calculate() {
     var pesoVar = document.getElementById('peso_input').value
     let calc = (pesoVar / (alturaVar * alturaVar)) * 10000
     let element = document.getElementById('dado')
+    let moveDado = document.getElementById("resultado")
 
 
     if (isNaN(calc)) {
         element.innerHTML = 'Digite os valores acima!'
-        element.style.display = "block"
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Digite os valores acima!',
 
-
+        })
     } else {
-        element.innerHTML = 'Seu IMC é: ' + calc.toFixed(2)
-        element.style.display = "block"
+        element.innerHTML = ('Seu IMC é: ' + calc.toFixed(2) + ' kg/m2')
+
+        document.getElementById("dado").scrollIntoView({
+            behavior: 'smooth'
+        });
         if (calc < 18.5) {
-            document.getElementById("magreza").style.backgroundColor = "rgb(210, 228, 209)"
+            document.getElementById("magreza").style.backgroundColor = "rgb(210, 228, 209)";
             document.getElementById("normal").style.backgroundColor = "white"
             document.getElementById("sobrepeso").style.backgroundColor = "white"
             document.getElementById("obesidade").style.backgroundColor = "white"
