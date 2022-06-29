@@ -1,3 +1,5 @@
+document.getElementById("container").body.style.zoom = 1.0
+
 function calculate() {
     var alturaVar = document.getElementById('altura').value
     var pesoVar = document.getElementById('peso_input').value
@@ -14,6 +16,7 @@ function calculate() {
             text: 'Digite os valores acima!',
 
         })
+        document.getElementById("resultado", "normal", "sobrepeso", "obesidade", "obesidadeGrave").style.background("transparent")
     } else {
         element.innerHTML = ('Seu IMC é: ' + calc.toFixed(2) + ' kg/m2')
 
