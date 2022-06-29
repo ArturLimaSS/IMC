@@ -44,7 +44,7 @@ function calculate() {
             document.getElementById("sobrepeso").style.backgroundColor = "white"
             document.getElementById("obesidade").style.backgroundColor = "rgb(210, 228, 209)"
             document.getElementById("obesidadeGrave").style.backgroundColor = "white"
-        } else if (calc > 40) {
+        } else if (calc >= 40) {
             document.getElementById("magreza").style.backgroundColor = "white"
             document.getElementById("normal").style.backgroundColor = "white"
             document.getElementById("sobrepeso").style.backgroundColor = "white"
